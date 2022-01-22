@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- parse means reading -->
+    <!-- different ways to add javascript in html  -->
+    <!-- add script tag in head tag -->
+    <!-- limitations -> browser parse the html file,when it found script tag it stops there and load js file, and stops parsing
+     , after loading complete then browser execute the js file, and there we got errors , because in js file we have used html tags
+    that are present in html file, but browser doesn't know about that, as we stops parsing in between to load js file
+  so this method is not good -->
+  <!-- add script as last element in body tag -->
+<!-- limitation: as browser parse the html file, and after it complete parsing it found a scipt tag so it load it and then execute it
+here it sucessfully execute it as html file is parse, it already know all the tags present in html file
+but this method takes time, as 1. parsing of html file happen 2. then loading of js file 3. and finally execution of js file
+ -->
+
+  <!-- asynchronus methods -->
+ <!-- add script tag in head tag with async attribute -->
+ <!-- parse and load are done simultaneously but as soon as load done, now only execution take place and parsing stops -->
+ <!-- limitation: browser parse the html file and found script tag, but due to async keyword, it will not stop parsing and 
+load js file in background, and execute js file as soon as js file loads, due to this, html parsing will stop,
+then it cause error during execution, it some tags were missing as html is only half parse -->
+
+<!-- add script tag in head with defer attribute -->
+<!-- in this, browser parse the html file, when script tag comes, it simultaneously load the js file
+and when loading done, it wait for parsing to complete and when parsing is done, it start executing js file 
+-->
+<!-- it saves loading time of js file -->
+<!-- this is best method -->
+</body>
+</html>

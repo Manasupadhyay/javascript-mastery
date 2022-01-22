@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+            
+    <title>Job Portal</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper #f57f17 yellow darken-4">
+          <a href="#" class="brand-logo">Job Portal</a>
+          <ul id="nav-mobile" class="right">
+            <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Login</a></li>
+            <li><a  class="waves-effect waves-light modal-trigger" href="#modal2">SignUp</a></li>
+            <li><a class="signOut">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+  
+
+  <!-- SignUp Modal -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>SignUp</h4>
+      <form class="signup-form" autocomplete="off" >
+          <input type="email" id="signUpEmail" placeholder="Email" >
+          <input type="password" id="signUpPassword" placeholder="Password" >
+          <button type="submit" class="btn waves-effect #f57f17 yellow darken-4">SignUp</button>
+      </form>
+    </div>  
+  </div>
+
+  <!-- Login Modal -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+      <form class="signin-form" autocomplete="off" >
+          <input type="email" id="loginEmail" placeholder="Email">
+          <input type="password" id="loginPassword" placeholder="Password">
+          <button type="submit" class="btn waves-effect #f57f17 yellow darken-4">Login</button>
+      </form>
+    </div>  
+  </div>
+
+
+
+<script src="./modal.js" ></script>
+
+<!---------------------- IMPORTS + CONFIGURATION -------------------->
+<script type="module" src="./firebase.js"></script>
+<script type="module" src="./auth.js"></script>
+
+</body>
+</html>

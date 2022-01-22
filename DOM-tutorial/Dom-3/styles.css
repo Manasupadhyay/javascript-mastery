@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.my-buttons{
+    
+}
+.btn{
+    display: block;
+    border: none;
+    outline: none;
+    padding: .5em 1em;
+    margin: 1rem;
+    color : #efefef;
+    background-color: tomato;
+    border-radius: 5px;
+}
